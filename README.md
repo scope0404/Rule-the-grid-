@@ -1,10 +1,10 @@
-# 🎮 RULE THE GRID
+## RULE THE GRID
 
 A turn-based territory conquest game for 2–8 players over LAN.
 
----
 
-## 📦 SETUP (do this once on every laptop)
+
+📦 SETUP (do this once on every laptop)
 
 1. Make sure Python 3.8+ is installed: https://python.org
 2. Install the only dependency:
@@ -13,20 +13,14 @@ A turn-based territory conquest game for 2–8 players over LAN.
    ```
 3. Download/copy this entire `rule_the_grid` folder onto each laptop.
 
----
+HOW TO START A GAME
 
-## 🚀 HOW TO START A GAME
-
-### The HOST player (one person only):
-```
-python client/client.py
-```
 - Enter your username & pick an avatar
 - Click **HOST GAME**
 - A server window will open automatically
 - Your IP address is printed in that window — **share it with friends**
 
-### Every OTHER player:
+ Every OTHER player:
 ```
 python client/client.py
 ```
@@ -34,9 +28,9 @@ python client/client.py
 - Type the host's IP address in the "Host IP" field
 - Click **JOIN GAME**
 
----
 
-## 🎯 GAME RULES
+
+ GAME RULES
 
 1. **Place your Capital** — click any land tile (must be 10+ squares from power-ups and other capitals)
 2. **Expand your empire** — click adjacent empty tiles to claim them (4 moves on land, 2 on water)
@@ -46,9 +40,9 @@ python client/client.py
 6. **Elimination** — if your Capital is captured, you're out
 7. **Victory** — last player standing wins!
 
----
 
-## 🕹️ CONTROLS
+
+ CONTROLS
 
 | Action | Control |
 |---|---|
@@ -62,9 +56,9 @@ python client/client.py
 | Chat | Click chat area, type, press Enter |
 | Light/Dark mode | Press F5 or click 🌙/☀ |
 
----
 
-## 🗂️ FILE STRUCTURE
+
+ FILE STRUCTURE
 
 ```
 rule_the_grid/
@@ -78,9 +72,9 @@ rule_the_grid/
 
 The server creates `game.db` (SQLite) to store players, moves, and map data.
 
----
 
-## 🔧 TROUBLESHOOTING
+
+ TROUBLESHOOTING
 
 **"Could not connect"** — Make sure the host ran the game first and all players are on the same WiFi network. Check that no firewall is blocking port 5555.
 
